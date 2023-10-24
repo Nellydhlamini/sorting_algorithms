@@ -59,7 +59,7 @@ int mid;
 if (low < high && array)
 {
 mid = (low + high - 1) / 2;
-recursive_merge_sort(array, helper, low, mid); 
+recursive_merge_sort(array, helper, low, mid);
 recursive_merge_sort(array, helper, mid + 1, high);
 merge(array, helper, low, mid, high);
 }
